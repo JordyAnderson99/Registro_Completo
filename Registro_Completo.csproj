@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+  <StartWorkingDirectory>$(MSBuildProjectDirectory)</StartWorkingDirectory>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameWorKCore.SqLite" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameWorKCore.Tools" Version="3.1.8">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Buscar.jpg" />
+    <None Remove="Nuevo.png" />
+    <None Remove="Guardar.jpg" />
+    <None Remove="Eliminar.png" />
+  </ItemGroup>
+
+  <ItemGroup> 
+    <Resource Include="Buscar.jpg" />
+    <Resource Include="Eliminar.png" />
+    <Resource Include="Guardar.jpg" /> 
+    <Resource Include="Nuevo.png" />
+  </ItemGroup>
+
+</Project>
